@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta charset="utf-8">
+    	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title> .NET Class Notes - 2022. </title>
+	<meta name="description" content="Information Technology">
+    	<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    	<meta name="author" content="GR8">
+    	<link rel="shortcut icon" href="https://krebner.com/networkplus.ico" />
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <script>
+  
+  window.onload = function() {
+    document.addEventListener("contextmenu", function(e){
+      e.preventDefault();
+    }, false);
+    document.addEventListener("keydown", function(e) {
+    //document.onkeydown = function(e) {
+      // "I" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+        disabledEvent(e);
+      }
+      // "J" key
+      if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+        disabledEvent(e);
+      }
+      // "S" key + macOS
+      if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+        disabledEvent(e);
+      }
+      // "U" key
+      if (e.ctrlKey && e.keyCode == 85) {
+        disabledEvent(e);
+      }
+      // "F12" key
+      if (event.keyCode == 123) {
+        disabledEvent(e);
+      }
+    }, false);
+    function disabledEvent(e){
+      if (e.stopPropagation){
+        e.stopPropagation();
+      } else if (window.event){
+        window.event.cancelBubble = true;
+      }
+      e.preventDefault();
+      return false;
+    }
+  };
+</script> 
+    
+</head>
+<body oncontextmenu="alert('Make it happen!');return false;" onselectstart="return false" ondragstart="return false" >
+
+    <div class="container-fluid" style="font-size:150%;">
+     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-dark navbar-custom">
+        <div class="container">
+            
+            <a class="navbar-brand" href="https://dotnet.microsoft.com"><strong> Microsoft .NET </strong></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="nav navbar-nav ml-auto">
+
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="https://vscode.dev/" target="_blank"><span style="color: yellow;"> Visual Studio Code (Online)   </span></a></li>
+
+                          
+				
+					
+                        </ul>
+                    </div>
+        </div>
+    </nav>        
+    </div>
+
+<div class="container text-center" style="font-size:200%;">
+    <br>
+    <br>
+    <br>
+	<strong> <h3> Microsoft .NET </h3> </strong>
+</div>
+<img src="microsoftdotnet6.github.io/dotnet0000.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0001.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0002.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0003.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0004.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0005.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0006.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0007.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0008.png" class="img-fluid d-block mx-auto"><hr>
+<img src="microsoftdotnet6.github.io/dotnet0009.png" class="img-fluid d-block mx-auto"><hr>
+<!--
+<img src="microsoftdotnet6.github.io/dotnet0010.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0011.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0012.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0013.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0014.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0015.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0016.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0017.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0018.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0019.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0020.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0021.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0022.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0023.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0024.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0025.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0026.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0027.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0028.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0029.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0030.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0031.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0032.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0033.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0034.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0035.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0036.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0037.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0038.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0039.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0040.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0041.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0042.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0043.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0044.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0045.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0046.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0047.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0048.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0049.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0050.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0051.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0052.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0053.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0054.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0055.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0056.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0057.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0058.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0059.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0060.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0061.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0062.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0063.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0064.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0065.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0066.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0067.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0068.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0069.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0070.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0071.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0072.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0073.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0074.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0075.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0076.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0077.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0078.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0079.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0080.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0081.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0082.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0083.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0084.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0085.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0086.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0087.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0088.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0089.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0090.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0091.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0092.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0093.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0094.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0095.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0096.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0097.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0098.png" class="img-fluid d-block mx-auto"><hr> 
+<img src="microsoftdotnet6.github.io/dotnet0099.png" class="img-fluid d-block mx-auto"><hr> 
+-->
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
